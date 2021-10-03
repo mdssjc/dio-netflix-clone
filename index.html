@@ -12,6 +12,8 @@
     <link rel="stylesheet" href="style/owl/owl.carousel.min.css" />
     <link rel="stylesheet" href="style/owl/owl.theme.default.min.css" />
 
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/StephanWagner/jBox@v1.3.3/dist/jBox.all.min.css" />
+
     <title>NETFLIX CLONE</title>
   </head>
   <body>
@@ -37,11 +39,11 @@
             Cards que está imperdível.
           </p>
           <div class="botoes">
-            <button role="button" class="botao">
+            <button id="watchButton" role="button" class="botao">
               <i class="fas fa-play"></i>
               ASSISTIR AGORA
             </button>
-            <button role="button" class="botao">
+            <button id="infoButton" role="button" class="botao" data-title="House of Cards (série americana)" >
               <i class="fas fa-info-circle"></i>
               MAIS INFORMAÇÕES
             </button>
@@ -85,9 +87,51 @@
       </div>
     </div>
 
+    <div id="watchModal">
+      <iframe
+        width="560"
+        height="315"
+        src="https://www.youtube.com/embed/8QnMmpfKWvo"
+        title="YouTube video player"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen
+      ></iframe>
+    </div>
+
+    <div id="infoModal">
+      <p>
+        <strong>House of Cards</strong> é uma série de televisão via streaming
+        de origem americana e do gênero drama político, criada por Beau Willimon
+        para a plataforma Netflix. Tem como protagonista Kevin Spacey, como
+        Francis Underwood, um político ambicioso que almeja um alto cargo
+        público em Washington, DC. House of Cards é uma adaptação do romance
+        homônimo escrito por Michael Dobbs e da minissérie britânica criada por
+        Andrew Davies.
+      </p>
+
+      <p>
+        A primeira temporada de treze episódios foi disponibilizada na íntegra
+        no dia 1 de fevereiro de 2013. A segunda foi lançada no dia 14 de
+        fevereiro de 2014 com o mesmo número de episódios. Sua temporada
+        final chegou a plataforma em 2 de novembro de 2018, contando com oito
+        episódios.
+      </p>
+
+      <p>
+        No Brasil a série também é transmitida pelo canal Paramount Channel e em
+        Portugal a série é exibida em exclusivo no Canal TVSéries. Foi a
+        primeira série transmitida em resolução 4K pela Netflix, sendo sucedida
+        pelas remasterizações de Breaking Bad e Orange Is the New Black.
+      </p>
+
+      <p><em>Fonte: Wikipedia</em></p>
+    </div>
+
     <script src="https://kit.fontawesome.com/2c36e9b7b1.js"></script>
     <script src="js/owl/jquery.min.js"></script>
     <script src="js/owl/owl.carousel.min.js"></script>
     <script src="js/owl/setup.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/StephanWagner/jBox@v1.3.3/dist/jBox.all.min.js"></script>
   </body>
 </html>

@@ -106,3 +106,29 @@ header nav a:hover {
 .carrossel-filmes {
   margin-top: 5px;
 }
+
+/*modal*/
+#watchModal {
+  display: none;
+  width: 560px;
+  height: 315px;
+}
+
+#infoModal {
+  display: none;
+}
+
+#infoModal p {
+  margin-bottom: 12px;
+}
+
+.jBox-title {
+  color: var(--preta);
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.jBox-content {
+  color: var(--preta);
+  text-align: justify;
+}
